@@ -13,5 +13,5 @@ node_modules
 .vscode
 
 # devel secrets and notes
-firebase-service-account.json
-readme.md
+#firebase-service-account.json
+#readme.md
