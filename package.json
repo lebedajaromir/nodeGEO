@@ -1,0 +1,31 @@
+{
+  "name": "nodegeo",
+  "version": "1.0.0",
+  "description": "Fast and simple Geo(code)Server written in nodejs (koa).",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lebedajaromir/nodeGEO.git"
+  },
+  "keywords": [
+    "nodejs",
+    "geo",
+    "server",
+    "koa"
+  ],
+  "author": "Jaromir Lebeda",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lebedajaromir/nodeGEO/issues"
+  },
+  "homepage": "https://github.com/lebedajaromir/nodeGEO#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "koa": "^2.11.0",
+    "pino": "^5.15.0",
+    "ramda": "^0.26.1"
+  }
+}

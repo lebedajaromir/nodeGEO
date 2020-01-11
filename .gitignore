@@ -1,0 +1,17 @@
+# dependencies
+node_modules
+.env
+
+# garbage
+*.log
+*~
+*#
+.DS_Store
+.nyc_output
+
+# ide stuff
+.vscode
+
+# devel secrets and notes
+firebase-service-account.json
+readme.md
