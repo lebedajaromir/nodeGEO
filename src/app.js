@@ -27,7 +27,7 @@ app.use(async ctx => {
 
 
 app.start = async () => {
-  logger.info('Starting geocode server')
+  logger.info('Starting geocode server.')
   //logger.info('Connecting (postgresql)')
   //database.connectUsersDB()
   //logger.info('Connecting (firestore)')
@@ -39,13 +39,13 @@ app.start = async () => {
 }
 
 app.stop = () => {
-//  logger.info('Stopping geocode server')
+  logger.info('Stopping geocode server.')
   services.server.close()
 }
 
 if (require.main === module) {
   app.start()
-    .then(() => logger.info('geocode server is running'))
+    .then(() => logger.info('Geocode server is running.'))
     .catch(err => logger.info(err))
 }
 
