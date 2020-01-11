@@ -14,7 +14,7 @@ env:
 install:
 - npm install
 script:
-- npm start
+- npm run test
 deploy:
   provider: heroku
   api_key:
