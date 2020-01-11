@@ -4,4 +4,5 @@
 ### run locally:
 
 docker build -t nodegeo .
+
 docker run --name nodegeo_cont -p 3000:3000 nodegeo
