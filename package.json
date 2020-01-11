@@ -4,7 +4,8 @@
   "description": "Fast and simple Geo(code)Server written in nodejs (koa).",
   "main": "index.js",
   "scripts": {
-    "test": "npm test"
+    "test": "npm test",
+    "start": "node src/app.js"
   },
   "repository": {
     "type": "git",
