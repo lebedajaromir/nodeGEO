@@ -1,0 +1,36 @@
+language: node_js
+node_js:
+  - 11.0.0
+branches:
+  only:
+    - master
+cache:
+  directories:
+    - node_modules
+services:
+  - docker
+env:
+  global:
+    #- NODE_ENV=test
+install:
+  - npm install
+
+# before_script:
+  #- sudo service postgresql stop
+  #- npm run infra
+  #- sleep 10
+  #- npm run migrate:test
+ # - npm run
+script:
+  - "npm run"
+
+deploy:
+  provider: heroku
+  api_key:
+    secure: "DkMbABYYvp2O01uo3nZSAWW3NWgGH8/Nsgt2xKYFLJmlZyrUNlx7hUIQOqZ509leq3CLSUVWZLocOA+hRvA0YVFtcl+L6I6fOWUXCMINZaBaDn5BPKyuw8x38TQKraNlsdp0PhTpH72O4ONAijUU0M6JbJsSLMrYdbh7uBoXv9XP4ZGOpR/TBMPC8D6MrM6UIqTZqAsHwaNFLZa9wRXdq2JYqeAFZ/1FWUfP3Dju2FG1ux4jPkjvx/aNMzakPUcCJIUg/X2Ihqq/33ddmEazjmKl4Wtd+dOGKEciajdpHZw7vbFDuGpX4EQ9YDldqYixpAB0Wek/dbCQm0mWT5HoTLyTS+QUlFgaWEHVnr77Oo0gs6xhtkX5Lj636prhT3meEI2ftUppwQfByAVCU8WFsPUDbN8Zdo1LZsWmr+8KVlfXixp4ADYUJMtz9VRU2gEBUES5iW9UMqZCsfnzdimI90+gReLcV8gV1SDgnXn4i4fKJ2NQebqpSnOJcWmPkoo8Wvkk/HUlaBhtYicK9z4zQt48rshw6sTM69SRM71wpLJ8c1J9uTo4hsBeqmXiXvQG/HgO3Awhi1vnfU7Pz7wYqW2M2Wfxv/SKn8AVnPLmWkLBUV9PGhgr3g6SBjpZTgcj7Q5Ev7w4ume+W7+KZT0WoGI/9201q0j3QyP4ydpwGHM="
+  app: nodegeo
+  strategy: git
+  on:
+    branch:
+      - master
+    repo: lebedajaromir/nodeGEO
