@@ -1,4 +1,4 @@
-### TODO: Simple and fast Geo(code) Server written in nodejs and koa. Supports WFS standard. Supports basic authentication. 
+### TODO: Simple and fast Geo(code) Server written in nodejs and koa. Supports OGC standards. Supports basic authentication. 
 
 
 ### run locally:
